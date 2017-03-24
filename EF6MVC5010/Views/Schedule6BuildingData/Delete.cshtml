@@ -1,0 +1,352 @@
+﻿@model EF6MVC5010.Models.Schedule6BuildingData
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Schedule6BuildingData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTSiteRef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTSiteRef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PropertyNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PropertyNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingAddress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingAddress1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingAddress2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingAddress2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.County)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.County)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContractId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContractId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MajorOrMinor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MajorOrMinor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProposedVacantDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProposedVacantDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingMaintenance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingMaintenance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingManagement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingManagement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnergyAndUtilitiesManagement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnergyAndUtilitiesManagement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LandscapeMaintenance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LandscapeMaintenance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExternalCleaning)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExternalCleaning)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WasteManagement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WasteManagement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CateringFacilitiesAndEquipment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CateringFacilitiesAndEquipment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecurityService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecurityService)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InternalCleaning)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InternalCleaning)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Porterage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Porterage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecurityEquipment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecurityEquipment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerStewardingService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerStewardingService)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CateringService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CateringService)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipmentMaintenance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquipmentMaintenance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommercialRef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommercialRef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommercialRefExtra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommercialRefExtra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommercialRefExtra2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommercialRefExtra2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VOLogUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VOLogUpdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AegisSite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AegisSite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AEGISLiveDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AEGISLiveDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServicesConfirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServicesConfirmed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SCHED6SRVSREQD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SCHED6SRVSREQD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OriginalBaselineOperatingBand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OriginalBaselineOperatingBand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentOperatingBand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentOperatingBand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NormalWorkingHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NormalWorkingHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicOpeningHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicOpeningHours)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

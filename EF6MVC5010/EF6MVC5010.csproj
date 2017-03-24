@@ -149,13 +149,51 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BuildingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PostCodesController.cs" />
+    <Compile Include="Controllers\Schedule6BuildingDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Building.cs">
+      <DependentUpon>BuildingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuildingModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildingModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuildingModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BuildingModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildingModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\PostCode.cs">
       <DependentUpon>ukpostcodesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Schedule6BuildingData.cs">
+      <DependentUpon>Schedule6BuildingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Schedule6BuildingDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedule6BuildingDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Schedule6BuildingDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedule6BuildingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Schedule6BuildingDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedule6BuildingDataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\ukpostcodesModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -181,6 +219,26 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\BuildingModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildingModel.edmx</DependentUpon>
+      <LastGenOutput>BuildingModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BuildingModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildingModel.edmx</DependentUpon>
+      <LastGenOutput>BuildingModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Schedule6BuildingDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Schedule6BuildingDataModel.edmx</DependentUpon>
+      <LastGenOutput>Schedule6BuildingDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Schedule6BuildingDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Schedule6BuildingDataModel.edmx</DependentUpon>
+      <LastGenOutput>Schedule6BuildingDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\ukpostcodesModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ukpostcodesModel.edmx</DependentUpon>
@@ -202,6 +260,20 @@
     </EntityDeploy>
     <Content Include="Models\ukpostcodesModel.edmx.diagram">
       <DependentUpon>ukpostcodesModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BuildingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BuildingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BuildingModel.edmx.diagram">
+      <DependentUpon>BuildingModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Schedule6BuildingDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Schedule6BuildingDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Schedule6BuildingDataModel.edmx.diagram">
+      <DependentUpon>Schedule6BuildingDataModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -233,6 +305,16 @@
     <Content Include="Views\PostCodes\Details.cshtml" />
     <Content Include="Views\PostCodes\Edit.cshtml" />
     <Content Include="Views\PostCodes\Index.cshtml" />
+    <Content Include="Views\Buildings\Create.cshtml" />
+    <Content Include="Views\Buildings\Delete.cshtml" />
+    <Content Include="Views\Buildings\Details.cshtml" />
+    <Content Include="Views\Buildings\Edit.cshtml" />
+    <Content Include="Views\Buildings\Index.cshtml" />
+    <Content Include="Views\Schedule6BuildingData\Create.cshtml" />
+    <Content Include="Views\Schedule6BuildingData\Delete.cshtml" />
+    <Content Include="Views\Schedule6BuildingData\Details.cshtml" />
+    <Content Include="Views\Schedule6BuildingData\Edit.cshtml" />
+    <Content Include="Views\Schedule6BuildingData\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

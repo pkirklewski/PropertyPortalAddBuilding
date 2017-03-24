@@ -5,12 +5,14 @@
 <div class="jumbotron">
     <h1>Ading Buildings to Process Library</h1>
     <p class="lead">Type a building number in the text box below and click on the add button.</p>
-
+    <p> @Html.TextBox("BuildingID",null,new { @class = "form-control"})
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
 <div>
-    @Html.ActionLink("List of postcodes", "Index", "PostCodes")
+    @Html.ActionLink("List of postcodes", "Index", "PostCodes")<br>
+    @Html.ActionLink("List of Buildings", "Index", "Buildings")<br>
+    @Html.ActionLink("List of Schedule6Buildings", "Index", "Schedule6BuildingData")
 </div>
 
 <div class="row">

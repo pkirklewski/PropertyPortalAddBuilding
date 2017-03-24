@@ -1,0 +1,273 @@
+﻿@model IEnumerable<EF6MVC5010.Models.Schedule6BuildingData>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTSiteRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PropertyNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingAddress1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingAddress2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.County)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postcode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MajorOrMinor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProposedVacantDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingMaintenance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingManagement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnergyAndUtilitiesManagement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LandscapeMaintenance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExternalCleaning)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WasteManagement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CateringFacilitiesAndEquipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecurityService)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InternalCleaning)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Porterage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecurityEquipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerStewardingService)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CateringService)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipmentMaintenance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommercialRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommercialRefExtra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommercialRefExtra2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VOLogUpdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AegisSite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AEGISLiveDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServicesConfirmed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SCHED6SRVSREQD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OriginalBaselineOperatingBand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentOperatingBand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NormalWorkingHours)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublicOpeningHours)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTSiteRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PropertyNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingAddress1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingAddress2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.County)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postcode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContractId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MajorOrMinor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProposedVacantDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingMaintenance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingManagement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnergyAndUtilitiesManagement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LandscapeMaintenance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExternalCleaning)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WasteManagement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CateringFacilitiesAndEquipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecurityService)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InternalCleaning)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Porterage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecurityEquipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerStewardingService)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CateringService)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EquipmentMaintenance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommercialRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommercialRefExtra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommercialRefExtra2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VOLogUpdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AegisSite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AEGISLiveDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServicesConfirmed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SCHED6SRVSREQD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OriginalBaselineOperatingBand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentOperatingBand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NormalWorkingHours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublicOpeningHours)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BuildingId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BuildingId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BuildingId })
+        </td>
+    </tr>
+}
+
+</table>
