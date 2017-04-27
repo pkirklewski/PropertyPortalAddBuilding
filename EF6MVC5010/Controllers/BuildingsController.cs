@@ -36,9 +36,12 @@ namespace EF6MVC5010.Controllers
         }
 
         // GET: Buildings/Create
-        public ActionResult Create()
+        public ActionResult Create(int? id)
         {
-            return View();
+
+            Building test = new Building();
+            test.Reference = id.Value;
+            return View(test);
         }
 
         // POST: Buildings/Create

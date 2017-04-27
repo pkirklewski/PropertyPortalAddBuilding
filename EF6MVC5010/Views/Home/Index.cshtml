@@ -5,21 +5,13 @@
 <div class="jumbotron">
     <h1>Ading Buildings to Process Library</h1>
     <p class="lead">Type a building number in the text box below and click on the add button.</p>
-    
-  <form action='@Url.Action("~/Buildings/Create")' method='post'>
-  @*<form action='/Buildings/Create' method='post'>*@
-      <p> @Html.TextBox("BuildingID", "", new { placeholder = "Type building ID here", @class = "form-control" })</p>
-      <p><input type='submit' class="btn btn-primary btn-lg"></p>
-
-      @*<p><a href="http://localhost:31824/Buildings/Create" class="btn btn-primary btn-lg">Create a new Building &raquo;</a></p>*@
-
-     
-        @* Adding form (below) in order to pass the information between the Index page to the Create page  
-        @Html.TextBox("TextBox1")
-        *@
-    </form>
-
-
+   
+        @using (Html.BeginForm())
+        {
+                    <p> @Html.TextBox("BuildingID", "", new { placeholder = "Type building ID here", @class = "form-control" })</p>
+                    <p><input type='submit' class="btn btn-primary btn-lg"></p>
+        }
+  
 </div>
 
 <div>

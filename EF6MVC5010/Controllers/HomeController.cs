@@ -13,6 +13,17 @@ namespace EF6MVC5010.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Index(string BuildingID)
+        {
+            BuildingsController viewModel = new BuildingsController();
+            
+            return RedirectToAction("Create","Buildings", new { id = Convert.ToInt32(BuildingID)});
+
+
+
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
