@@ -38,10 +38,22 @@ namespace EF6MVC5010.Controllers
         // GET: Buildings/Create
         public ActionResult Create(int? id)
         {
-
             Building test = new Building();
             test.Reference = id.Value;
+            var context = GetContext();
+            //var bName = from b in contex
+            //test.Name = bName;
+
+            //var q = (from b in db.Buildings where b = id select b);
+
+
             return View(test);
+
+        }
+
+        private static DbContext GetContext()
+        {
+            return new DbContext();
         }
 
         // POST: Buildings/Create
@@ -69,6 +81,13 @@ namespace EF6MVC5010.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Building building = db.Buildings.Find(id);
+
+
+            string lat; 
+            lat = building.Latitude.ToString();
+            
+
+
             if (building == null)
             {
                 return HttpNotFound();
